@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MapViewController : UIViewController
+#import <MapKit/MapKit.h>
+@interface MapViewController : UIViewController<MKMapViewDelegate>
 
 @end

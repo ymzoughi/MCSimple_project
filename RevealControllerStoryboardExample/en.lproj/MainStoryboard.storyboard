@@ -48,6 +48,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="MapView" destination="E6O-iX-rep" id="9L9-s7-HDC"/>
                         <outlet property="revealButtonItem" destination="0Cm-Ub-RIS" id="N9v-HX-U4d"/>
                     </connections>
                 </viewController>
@@ -175,7 +176,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="reveal-icon.png" width="22" height="17"/>
         <image name="reveal-icon.png" width="22" height="17"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
