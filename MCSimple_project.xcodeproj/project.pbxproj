@@ -50,6 +50,8 @@
 		01FB86AB169E3CE700A0A1A8 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 		01FB86AF169E42B600A0A1A8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		91090B7C1790ED680090B501 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "en.lproj/MainStoryboard-iPad.storyboard"; sourceTree = "<group>"; };
+		A90DAF6D186C851400CC8E32 /* Tunis.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tunis.gpx; sourceTree = "<group>"; };
+		A90DAF6E186C870800CC8E32 /* Toulouse.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Toulouse.gpx; sourceTree = "<group>"; };
 		A9692A97186C2981001211F5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		A9692A98186C2981001211F5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		A9692AA3186C390E001211F5 /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleView.h; path = ../SimpleView.h; sourceTree = "<group>"; };
@@ -74,6 +76,8 @@
 		01FB865A169E2D8B00A0A1A8 = {
 			isa = PBXGroup;
 			children = (
+				A90DAF6E186C870800CC8E32 /* Toulouse.gpx */,
+				A90DAF6D186C851400CC8E32 /* Tunis.gpx */,
 				01FB866F169E2D8B00A0A1A8 /* MCSimple */,
 				01FB868C169E2DA500A0A1A8 /* SWRevealViewController */,
 				01FB8668169E2D8B00A0A1A8 /* Frameworks */,

@@ -13,7 +13,6 @@
 @implementation MenuViewController
 -(void)viewDidLoad {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    NSLog(@"yahya");
 }
 - (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
 {
