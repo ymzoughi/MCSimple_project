@@ -23,6 +23,8 @@
 		01FB86AE169E3CE700A0A1A8 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FB86AB169E3CE700A0A1A8 /* reveal-icon@2x.png */; };
 		01FB86B0169E42B600A0A1A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FB86AF169E42B600A0A1A8 /* MapKit.framework */; };
 		91090B7D1790ED680090B501 /* MainStoryboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91090B7B1790ED680090B501 /* MainStoryboard-iPad.storyboard */; };
+		A90DAF71186C8AB000CC8E32 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A90DAF70186C8AB000CC8E32 /* Utils.m */; };
+		A90DAF73186C8E9500CC8E32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */; };
 		A9692A99186C2981001211F5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692A98186C2981001211F5 /* SWRevealViewController.m */; };
 		A9692AA5186C390E001211F5 /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692AA4186C390E001211F5 /* SimpleView.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,9 @@
 		91090B7C1790ED680090B501 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "en.lproj/MainStoryboard-iPad.storyboard"; sourceTree = "<group>"; };
 		A90DAF6D186C851400CC8E32 /* Tunis.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tunis.gpx; sourceTree = "<group>"; };
 		A90DAF6E186C870800CC8E32 /* Toulouse.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Toulouse.gpx; sourceTree = "<group>"; };
+		A90DAF6F186C8AB000CC8E32 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		A90DAF70186C8AB000CC8E32 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A9692A97186C2981001211F5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		A9692A98186C2981001211F5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		A9692AA3186C390E001211F5 /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleView.h; path = ../SimpleView.h; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90DAF73186C8E9500CC8E32 /* CoreLocation.framework in Frameworks */,
 				01FB86B0169E42B600A0A1A8 /* MapKit.framework in Frameworks */,
 				01FB866A169E2D8B00A0A1A8 /* UIKit.framework in Frameworks */,
 				01FB866C169E2D8B00A0A1A8 /* Foundation.framework in Frameworks */,
@@ -96,6 +102,7 @@
 		01FB8668169E2D8B00A0A1A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */,
 				01FB86AF169E42B600A0A1A8 /* MapKit.framework */,
 				01FB8669169E2D8B00A0A1A8 /* UIKit.framework */,
 				01FB866B169E2D8B00A0A1A8 /* Foundation.framework */,
@@ -169,6 +176,8 @@
 		A90DAF6C186C6EBF00CC8E32 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A90DAF6F186C8AB000CC8E32 /* Utils.h */,
+				A90DAF70186C8AB000CC8E32 /* Utils.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +256,7 @@
 				01FB867A169E2D8B00A0A1A8 /* AppDelegate.m in Sources */,
 				01FB869D169E364800A0A1A8 /* MenuViewController.m in Sources */,
 				01FB86A4169E36FE00A0A1A8 /* MapViewController.m in Sources */,
+				A90DAF71186C8AB000CC8E32 /* Utils.m in Sources */,
 				A9692AA5186C390E001211F5 /* SimpleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

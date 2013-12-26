@@ -24,9 +24,9 @@
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     _MapView.delegate = self;
 }
-/***************************************************************
+/**********************************************************************************************
             CENTER POSITION
- ***************************************************************/
+ ********************************************************************************************/
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     [mapView setCenterCoordinate:mapView.userLocation.location.coordinate animated:YES];
