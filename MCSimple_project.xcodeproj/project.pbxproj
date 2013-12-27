@@ -29,6 +29,7 @@
 		A9692AA5186C390E001211F5 /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692AA4186C390E001211F5 /* SimpleView.m */; };
 		A9843143186D762D00D8DD16 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843142186D762D00D8DD16 /* Reachability.m */; };
 		A9843146186D767A00D8DD16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9843145186D767A00D8DD16 /* SystemConfiguration.framework */; };
+		A9843149186D80BF00D8DD16 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843148186D80BF00D8DD16 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		A9843141186D762D00D8DD16 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		A9843142186D762D00D8DD16 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A9843145186D767A00D8DD16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A9843147186D80BF00D8DD16 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A9843148186D80BF00D8DD16 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,8 @@
 			children = (
 				A9843141186D762D00D8DD16 /* Reachability.h */,
 				A9843142186D762D00D8DD16 /* Reachability.m */,
+				A9843147186D80BF00D8DD16 /* Constants.h */,
+				A9843148186D80BF00D8DD16 /* Constants.m */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				01FB86A4169E36FE00A0A1A8 /* MapViewController.m in Sources */,
 				A90DAF71186C8AB000CC8E32 /* Utils.m in Sources */,
 				A9692AA5186C390E001211F5 /* SimpleView.m in Sources */,
+				A9843149186D80BF00D8DD16 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

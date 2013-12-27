@@ -7,7 +7,6 @@
 //
 
 #import "Utils.h"
-
 @implementation Utils
 
 +(float)Distance:(CLLocationCoordinate2D)depart arrival:(CLLocationCoordinate2D)arrival{
@@ -22,10 +21,27 @@
     float sysVer = [[[UIDevice currentDevice] systemVersion] floatValue];
     return sysVer;
 }
+
 +(BOOL)connected
 {
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     NetworkStatus networkStatus = [reachability currentReachabilityStatus];
     return networkStatus != NotReachable;
+}
+
++(NSString *)connectedToNetwork{
+    NSString *TypeConnection;
+    Reachability* reachability = [Reachability reachabilityWithHostname:kTestURL];
+    NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
+    
+    if (remoteHostStatus == ReachableViaWWAN)
+    {
+        TypeConnection = @"cell";
+    }
+    else if (remoteHostStatus == ReachableViaWiFi)
+    {
+        TypeConnection = @"wifi";
+    }
+    return TypeConnection;
 }
 @end
