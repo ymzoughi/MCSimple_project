@@ -27,6 +27,8 @@
 		A90DAF73186C8E9500CC8E32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */; };
 		A9692A99186C2981001211F5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692A98186C2981001211F5 /* SWRevealViewController.m */; };
 		A9692AA5186C390E001211F5 /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692AA4186C390E001211F5 /* SimpleView.m */; };
+		A9843143186D762D00D8DD16 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843142186D762D00D8DD16 /* Reachability.m */; };
+		A9843146186D767A00D8DD16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9843145186D767A00D8DD16 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		A9692A98186C2981001211F5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		A9692AA3186C390E001211F5 /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleView.h; path = ../SimpleView.h; sourceTree = "<group>"; };
 		A9692AA4186C390E001211F5 /* SimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleView.m; path = ../SimpleView.m; sourceTree = "<group>"; };
+		A9843141186D762D00D8DD16 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A9843142186D762D00D8DD16 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A9843145186D767A00D8DD16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9843146186D767A00D8DD16 /* SystemConfiguration.framework in Frameworks */,
 				A90DAF73186C8E9500CC8E32 /* CoreLocation.framework in Frameworks */,
 				01FB86B0169E42B600A0A1A8 /* MapKit.framework in Frameworks */,
 				01FB866A169E2D8B00A0A1A8 /* UIKit.framework in Frameworks */,
@@ -102,6 +108,7 @@
 		01FB8668169E2D8B00A0A1A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9843145186D767A00D8DD16 /* SystemConfiguration.framework */,
 				A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */,
 				01FB86AF169E42B600A0A1A8 /* MapKit.framework */,
 				01FB8669169E2D8B00A0A1A8 /* UIKit.framework */,
@@ -114,6 +121,7 @@
 		01FB866F169E2D8B00A0A1A8 /* MCSimple */ = {
 			isa = PBXGroup;
 			children = (
+				A9843144186D765600D8DD16 /* libs */,
 				A90DAF6C186C6EBF00CC8E32 /* Controllers */,
 				A90DAF6B186C6E7300CC8E32 /* Views */,
 				91090B7A1790ED0B0090B501 /* iPad */,
@@ -180,6 +188,15 @@
 				A90DAF70186C8AB000CC8E32 /* Utils.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A9843144186D765600D8DD16 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A9843141186D762D00D8DD16 /* Reachability.h */,
+				A9843142186D762D00D8DD16 /* Reachability.m */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +270,7 @@
 			files = (
 				A9692A99186C2981001211F5 /* SWRevealViewController.m in Sources */,
 				01FB8676169E2D8B00A0A1A8 /* main.m in Sources */,
+				A9843143186D762D00D8DD16 /* Reachability.m in Sources */,
 				01FB867A169E2D8B00A0A1A8 /* AppDelegate.m in Sources */,
 				01FB869D169E364800A0A1A8 /* MenuViewController.m in Sources */,
 				01FB86A4169E36FE00A0A1A8 /* MapViewController.m in Sources */,
