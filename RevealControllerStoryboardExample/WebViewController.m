@@ -1,18 +1,18 @@
 //
-//  SimpleView.m
-//  Sidebar_project
+//  WebViewController.m
+//  MCSimple_project
 //
-//  Created by Yahya on 26/12/2013.
-//  Copyright (c) 2013 CoDeveloper. All rights reserved.
+//  Created by Yahya on 06/01/2014.
+//  Copyright (c) 2014 CoDeveloper. All rights reserved.
 //
 
-#import "SimpleView.h"
+#import "WebViewController.h"
 
-@interface SimpleView ()
+@interface WebViewController ()
 @property (nonatomic) IBOutlet UIBarButtonItem* revealButtonItem;
 @end
 
-@implementation SimpleView
+@implementation WebViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,6 @@
     [self.revealButtonItem setTarget: self.revealViewController];
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
-    
 	// Do any additional setup after loading the view.
 }
 

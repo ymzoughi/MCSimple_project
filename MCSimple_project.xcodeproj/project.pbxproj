@@ -30,6 +30,9 @@
 		A9843143186D762D00D8DD16 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843142186D762D00D8DD16 /* Reachability.m */; };
 		A9843146186D767A00D8DD16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9843145186D767A00D8DD16 /* SystemConfiguration.framework */; };
 		A9843149186D80BF00D8DD16 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843148186D80BF00D8DD16 /* Constants.m */; };
+		A9AF3182186DCF3F00328440 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF3180186DCF3F00328440 /* EventKit.framework */; };
+		A9AF3183186DCF3F00328440 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF3181186DCF3F00328440 /* EventKitUI.framework */; };
+		A9B65BD6187B0DA8007E82DF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B65BD5187B0DA8007E82DF /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,11 @@
 		A9843145186D767A00D8DD16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A9843147186D80BF00D8DD16 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A9843148186D80BF00D8DD16 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A9AF3180186DCF3F00328440 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A9AF3181186DCF3F00328440 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		A9AF318D186DD1AE00328440 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "src/build/Debug-iphoneos/libKal.a"; sourceTree = "<group>"; };
+		A9B65BD4187B0DA8007E82DF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		A9B65BD5187B0DA8007E82DF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AF3182186DCF3F00328440 /* EventKit.framework in Frameworks */,
+				A9AF3183186DCF3F00328440 /* EventKitUI.framework in Frameworks */,
 				A9843146186D767A00D8DD16 /* SystemConfiguration.framework in Frameworks */,
 				A90DAF73186C8E9500CC8E32 /* CoreLocation.framework in Frameworks */,
 				01FB86B0169E42B600A0A1A8 /* MapKit.framework in Frameworks */,
@@ -111,6 +121,9 @@
 		01FB8668169E2D8B00A0A1A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9AF318D186DD1AE00328440 /* libKal.a */,
+				A9AF3180186DCF3F00328440 /* EventKit.framework */,
+				A9AF3181186DCF3F00328440 /* EventKitUI.framework */,
 				A9843145186D767A00D8DD16 /* SystemConfiguration.framework */,
 				A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */,
 				01FB86AF169E42B600A0A1A8 /* MapKit.framework */,
@@ -124,6 +137,7 @@
 		01FB866F169E2D8B00A0A1A8 /* MCSimple */ = {
 			isa = PBXGroup;
 			children = (
+				A998834A187BE58200C6C0D8 /* html */,
 				A9843144186D765600D8DD16 /* libs */,
 				A90DAF6C186C6EBF00CC8E32 /* Controllers */,
 				A90DAF6B186C6E7300CC8E32 /* Views */,
@@ -176,10 +190,6 @@
 		A90DAF6B186C6E7300CC8E32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A9692AA3186C390E001211F5 /* SimpleView.h */,
-				A9692AA4186C390E001211F5 /* SimpleView.m */,
-				01FB86A2169E36FE00A0A1A8 /* MapViewController.h */,
-				01FB86A3169E36FE00A0A1A8 /* MapViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -187,8 +197,12 @@
 		A90DAF6C186C6EBF00CC8E32 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A90DAF6F186C8AB000CC8E32 /* Utils.h */,
-				A90DAF70186C8AB000CC8E32 /* Utils.m */,
+				A9692AA3186C390E001211F5 /* SimpleView.h */,
+				A9692AA4186C390E001211F5 /* SimpleView.m */,
+				01FB86A2169E36FE00A0A1A8 /* MapViewController.h */,
+				01FB86A3169E36FE00A0A1A8 /* MapViewController.m */,
+				A9B65BD4187B0DA8007E82DF /* WebViewController.h */,
+				A9B65BD5187B0DA8007E82DF /* WebViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -200,8 +214,17 @@
 				A9843142186D762D00D8DD16 /* Reachability.m */,
 				A9843147186D80BF00D8DD16 /* Constants.h */,
 				A9843148186D80BF00D8DD16 /* Constants.m */,
+				A90DAF6F186C8AB000CC8E32 /* Utils.h */,
+				A90DAF70186C8AB000CC8E32 /* Utils.m */,
 			);
 			name = libs;
+			sourceTree = "<group>";
+		};
+		A998834A187BE58200C6C0D8 /* html */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9692A99186C2981001211F5 /* SWRevealViewController.m in Sources */,
+				A9B65BD6187B0DA8007E82DF /* WebViewController.m in Sources */,
 				01FB8676169E2D8B00A0A1A8 /* main.m in Sources */,
 				A9843143186D762D00D8DD16 /* Reachability.m in Sources */,
 				01FB867A169E2D8B00A0A1A8 /* AppDelegate.m in Sources */,
@@ -374,6 +398,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = MCSimple_project;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/makinacorpus/Downloads/Kal-master";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

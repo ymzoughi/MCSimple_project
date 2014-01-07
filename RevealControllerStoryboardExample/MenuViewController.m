@@ -45,7 +45,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,6 +60,9 @@
             
         case 1:
             CellIdentifier = @"SimpleView";
+            break;
+        case 2:
+            CellIdentifier = @"WebView";
             break;
 
     }
