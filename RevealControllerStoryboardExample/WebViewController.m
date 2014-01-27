@@ -25,15 +25,9 @@
 -(void)PerformLocalHtml:(NSString *)FileName
 {
     NSString *htmlPath = [[NSBundle mainBundle] pathForResource:FileName ofType:@"html" inDirectory:@"/htdocs" ];
-    NSLog(@"%@",htmlPath);
-
     NSString *html = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     [webView loadHTMLString:html baseURL:[NSURL fileURLWithPath: [NSString stringWithFormat:@"%@/htdocs/",[[NSBundle mainBundle] bundlePath]]]];
-    /*NSString *htmlFile = [[NSBundle mainBundle] pathForResource:FileName ofType:@"html"];
-    NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
-    NSString *path = [[NSBundle mainBundle] bundlePath];
-    NSURL *baseURL = [NSURL fileURLWithPath:path];
-    [webView loadHTMLString:htmlString baseURL:baseURL];*/
+    
 }
 
 
@@ -44,9 +38,9 @@
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.
+    //Clear Cache
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
-
-    webView.backgroundColor = [UIColor redColor];
+    //Loading index
     [self PerformLocalHtml:@"index"];
 }
 
