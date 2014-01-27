@@ -25,11 +25,12 @@
 		91090B7D1790ED680090B501 /* MainStoryboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91090B7B1790ED680090B501 /* MainStoryboard-iPad.storyboard */; };
 		A90DAF71186C8AB000CC8E32 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A90DAF70186C8AB000CC8E32 /* Utils.m */; };
 		A90DAF73186C8E9500CC8E32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */; };
-		A9692A99186C2981001211F5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692A98186C2981001211F5 /* SWRevealViewController.m */; };
 		A9692AA5186C390E001211F5 /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9692AA4186C390E001211F5 /* SimpleView.m */; };
 		A9843143186D762D00D8DD16 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843142186D762D00D8DD16 /* Reachability.m */; };
 		A9843146186D767A00D8DD16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9843145186D767A00D8DD16 /* SystemConfiguration.framework */; };
 		A9843149186D80BF00D8DD16 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9843148186D80BF00D8DD16 /* Constants.m */; };
+		A99D6CE018966A79006FA146 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99D6CDF18966A79006FA146 /* SWRevealViewController.m */; };
+		A99D6CE418966FFE006FA146 /* htdocs in Resources */ = {isa = PBXBuildFile; fileRef = A99D6CE318966FFE006FA146 /* htdocs */; };
 		A9AF3182186DCF3F00328440 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF3180186DCF3F00328440 /* EventKit.framework */; };
 		A9AF3183186DCF3F00328440 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF3181186DCF3F00328440 /* EventKitUI.framework */; };
 		A9B65BD6187B0DA8007E82DF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B65BD5187B0DA8007E82DF /* WebViewController.m */; };
@@ -63,8 +64,6 @@
 		A90DAF6F186C8AB000CC8E32 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		A90DAF70186C8AB000CC8E32 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		A90DAF72186C8E9500CC8E32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		A9692A97186C2981001211F5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
-		A9692A98186C2981001211F5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		A9692AA3186C390E001211F5 /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleView.h; path = ../SimpleView.h; sourceTree = "<group>"; };
 		A9692AA4186C390E001211F5 /* SimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleView.m; path = ../SimpleView.m; sourceTree = "<group>"; };
 		A9843141186D762D00D8DD16 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -72,6 +71,9 @@
 		A9843145186D767A00D8DD16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A9843147186D80BF00D8DD16 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A9843148186D80BF00D8DD16 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A99D6CDE18966A79006FA146 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		A99D6CDF18966A79006FA146 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		A99D6CE318966FFE006FA146 /* htdocs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = htdocs; sourceTree = "<group>"; };
 		A9AF3180186DCF3F00328440 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		A9AF3181186DCF3F00328440 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		A9AF318D186DD1AE00328440 /* libKal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKal.a; path = "src/build/Debug-iphoneos/libKal.a"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		01FB865A169E2D8B00A0A1A8 = {
 			isa = PBXGroup;
 			children = (
+				A99D6CE318966FFE006FA146 /* htdocs */,
 				A90DAF6E186C870800CC8E32 /* Toulouse.gpx */,
 				A90DAF6D186C851400CC8E32 /* Tunis.gpx */,
 				01FB866F169E2D8B00A0A1A8 /* MCSimple */,
@@ -173,8 +176,8 @@
 		01FB868C169E2DA500A0A1A8 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A9692A97186C2981001211F5 /* SWRevealViewController.h */,
-				A9692A98186C2981001211F5 /* SWRevealViewController.m */,
+				A99D6CDE18966A79006FA146 /* SWRevealViewController.h */,
+				A99D6CDF18966A79006FA146 /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
 			path = ../SWRevealViewController;
@@ -281,6 +284,7 @@
 				01FB8674169E2D8B00A0A1A8 /* InfoPlist.strings in Resources */,
 				01FB867C169E2D8B00A0A1A8 /* Default.png in Resources */,
 				01FB867E169E2D8B00A0A1A8 /* Default@2x.png in Resources */,
+				A99D6CE418966FFE006FA146 /* htdocs in Resources */,
 				01FB8680169E2D8B00A0A1A8 /* Default-568h@2x.png in Resources */,
 				01FB8683169E2D8B00A0A1A8 /* MainStoryboard.storyboard in Resources */,
 				01FB86AD169E3CE700A0A1A8 /* reveal-icon.png in Resources */,
@@ -296,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9692A99186C2981001211F5 /* SWRevealViewController.m in Sources */,
 				A9B65BD6187B0DA8007E82DF /* WebViewController.m in Sources */,
 				01FB8676169E2D8B00A0A1A8 /* main.m in Sources */,
 				A9843143186D762D00D8DD16 /* Reachability.m in Sources */,
@@ -304,6 +307,7 @@
 				01FB869D169E364800A0A1A8 /* MenuViewController.m in Sources */,
 				01FB86A4169E36FE00A0A1A8 /* MapViewController.m in Sources */,
 				A90DAF71186C8AB000CC8E32 /* Utils.m in Sources */,
+				A99D6CE018966A79006FA146 /* SWRevealViewController.m in Sources */,
 				A9692AA5186C390E001211F5 /* SimpleView.m in Sources */,
 				A9843149186D80BF00D8DD16 /* Constants.m in Sources */,
 			);
@@ -398,7 +402,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = MCSimple_project;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/Users/makinacorpus/Downloads/Kal-master";
+				USER_HEADER_SEARCH_PATHS = "/Users/makinacorpus/Downloads/Kal-master /Users/makinacorpus/Desktop/SWRevealViewController/SWRevealViewController";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
